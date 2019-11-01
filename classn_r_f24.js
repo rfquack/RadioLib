@@ -1,0 +1,26 @@
+var classn_r_f24 =
+[
+    [ "nRF24", "classn_r_f24.html#a113f5c11077549e18b2023d52a13c99e", null ],
+    [ "begin", "classn_r_f24.html#a60eb59262c5004b587b1d8177706ff28", null ],
+    [ "disablePipe", "classn_r_f24.html#a4dd39e5c0efee1f0c2a14f729eb4426a", null ],
+    [ "getPacketLength", "classn_r_f24.html#a60d2bb5f12cb226e7bd2435f6acd0aba", null ],
+    [ "getStatus", "classn_r_f24.html#a3f0b08fd8e58db36f6c1926cc3eac6a9", null ],
+    [ "readData", "classn_r_f24.html#ad1941fce4de97c5050eba341763e95ac", null ],
+    [ "receive", "classn_r_f24.html#ad84595667957d2899d571e10c6495634", null ],
+    [ "receiveDirect", "classn_r_f24.html#ac7f201f69756784b56c9998d7332e9a1", null ],
+    [ "setAddressWidth", "classn_r_f24.html#a5b01677f5ce6bee54da8fc7098c339f4", null ],
+    [ "setDataRate", "classn_r_f24.html#a1f3ec2196733a2e2476f50690967f285", null ],
+    [ "setFrequency", "classn_r_f24.html#abec5f9dba44a019e23c8bf516f104fad", null ],
+    [ "setFrequencyDeviation", "classn_r_f24.html#a7d11ab2459bd03ee0df98f769c3b24c8", null ],
+    [ "setIrqAction", "classn_r_f24.html#abf9323748b1a850e6ddc6f6d48f4cfb3", null ],
+    [ "setOutputPower", "classn_r_f24.html#a824453d547c0b42ac1988acb42032ca4", null ],
+    [ "setReceivePipe", "classn_r_f24.html#a31bcc5a8c3747bf08a273dbdadc5481a", null ],
+    [ "setReceivePipe", "classn_r_f24.html#ab5bc08aef88d8cf41c38369044005da8", null ],
+    [ "setTransmitPipe", "classn_r_f24.html#aa0e1f2dddf810213410a420205bbd8af", null ],
+    [ "sleep", "classn_r_f24.html#a033287e33c532638c11e2775a073f297", null ],
+    [ "standby", "classn_r_f24.html#a225c19fda7bf705f4f2652c71214adff", null ],
+    [ "startReceive", "classn_r_f24.html#af4f443da5d90e032e5f2f65420515f9c", null ],
+    [ "startTransmit", "classn_r_f24.html#a25cb986cab78ea92ceab76fec70713d9", null ],
+    [ "transmit", "classn_r_f24.html#af83d2ee7c9195f4ce9cd12df798ff869", null ],
+    [ "transmitDirect", "classn_r_f24.html#af328670d7c35c4b11b4c8f59f21d0716", null ]
+];
