@@ -30,5 +30,6 @@ var class_i_serial =
     [ "println", "class_i_serial.html#ac46c8197c06b703bcb83ed3947492a4f", null ],
     [ "println", "class_i_serial.html#ab9bb40acf5dd420afed4ea80d7989a20", null ],
     [ "read", "class_i_serial.html#a59bdc39fa8633f3bb6154dacb043ae10", null ],
-    [ "write", "class_i_serial.html#a0e3eac99b53d90cd8c725a5cc409e438", null ]
+    [ "write", "class_i_serial.html#a0e3eac99b53d90cd8c725a5cc409e438", null ],
+    [ "_mod", "class_i_serial.html#a59b7807c08f8bdc4c8612fe02ee528c1", null ]
 ];

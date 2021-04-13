@@ -51,5 +51,6 @@ var class_s_x128x =
     [ "transmit", "class_s_x128x.html#aeb62c5a521aafc1e0525c58e9364482b", null ],
     [ "transmit", "class_s_x128x.html#af253e1e45361de74aefd01a7c73c28f5", null ],
     [ "transmit", "class_s_x128x.html#af81565ee82ef9a7de9c5663c745f4ef7", null ],
-    [ "transmitDirect", "class_s_x128x.html#a53892566b0259d348158efe3c3c3601a", null ]
+    [ "transmitDirect", "class_s_x128x.html#a53892566b0259d348158efe3c3c3601a", null ],
+    [ "_mod", "class_s_x128x.html#ac9fa64992228738c773a82c2dacaf95b", null ]
 ];

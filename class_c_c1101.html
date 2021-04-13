@@ -84,6 +84,7 @@ $(document).ready(function(){initNavTree('class_c_c1101.html',''); initResizable
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="class_c_c1101-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">CC1101 Class Reference</div>  </div>
@@ -232,6 +233,27 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memitem:a2a4c6e622dffd2788d8ac52d708b0705"><td class="memItemLeft" align="right" valign="top">int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_c1101.html#a2a4c6e622dffd2788d8ac52d708b0705">getChipVersion</a> ()</td></tr>
 <tr class="memdesc:a2a4c6e622dffd2788d8ac52d708b0705"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read version SPI register. Should return CC1101_VERSION_LEGACY (0x04) or CC1101_VERSION_CURRENT (0x14) if <a class="el" href="class_c_c1101.html" title="Control class for CC1101 module.">CC1101</a> is connected and working.  <a href="class_c_c1101.html#a2a4c6e622dffd2788d8ac52d708b0705">More...</a><br /></td></tr>
 <tr class="separator:a2a4c6e622dffd2788d8ac52d708b0705"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa66daaa7c12dbab27c4d785e1ab27123"><td class="memItemLeft" align="right" valign="top"><a id="aa66daaa7c12dbab27c4d785e1ab27123"></a>
+int16_t&#160;</td><td class="memItemRight" valign="bottom"><b>SPIgetRegValue</b> (uint8_t reg, uint8_t msb=7, uint8_t lsb=0)</td></tr>
+<tr class="separator:aa66daaa7c12dbab27c4d785e1ab27123"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab802393d2b32249caf2752ad768ab7a0"><td class="memItemLeft" align="right" valign="top"><a id="ab802393d2b32249caf2752ad768ab7a0"></a>
+int16_t&#160;</td><td class="memItemRight" valign="bottom"><b>SPIsetRegValue</b> (uint8_t reg, uint8_t value, uint8_t msb=7, uint8_t lsb=0, uint8_t checkInterval=2)</td></tr>
+<tr class="separator:ab802393d2b32249caf2752ad768ab7a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6bc3a77e51f9e56753beb73e2225697b"><td class="memItemLeft" align="right" valign="top"><a id="a6bc3a77e51f9e56753beb73e2225697b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SPIreadRegisterBurst</b> (uint8_t reg, uint8_t numBytes, uint8_t *inBytes)</td></tr>
+<tr class="separator:a6bc3a77e51f9e56753beb73e2225697b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f730b7a6577444f10c4cfae091b02e4"><td class="memItemLeft" align="right" valign="top"><a id="a7f730b7a6577444f10c4cfae091b02e4"></a>
+uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>SPIreadRegister</b> (uint8_t reg)</td></tr>
+<tr class="separator:a7f730b7a6577444f10c4cfae091b02e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a394b2bca8f4bdd37b38bc069016ed7d5"><td class="memItemLeft" align="right" valign="top"><a id="a394b2bca8f4bdd37b38bc069016ed7d5"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SPIwriteRegisterBurst</b> (uint8_t reg, uint8_t *data, size_t len)</td></tr>
+<tr class="separator:a394b2bca8f4bdd37b38bc069016ed7d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c5da023ff87697627cadc970240a4ec"><td class="memItemLeft" align="right" valign="top"><a id="a8c5da023ff87697627cadc970240a4ec"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SPIwriteRegister</b> (uint8_t reg, uint8_t data)</td></tr>
+<tr class="separator:a8c5da023ff87697627cadc970240a4ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0879265115c40a170f89fdd74e8eb12"><td class="memItemLeft" align="right" valign="top"><a id="ac0879265115c40a170f89fdd74e8eb12"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SPIsendCommand</b> (uint8_t cmd)</td></tr>
+<tr class="separator:ac0879265115c40a170f89fdd74e8eb12"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab139a34e03a6fd5a781cd54da21d308f"><td class="memItemLeft" align="right" valign="top">int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_c1101.html#ab139a34e03a6fd5a781cd54da21d308f">transmit</a> (__FlashStringHelper *fstr, uint8_t addr=0)</td></tr>
 <tr class="memdesc:ab139a34e03a6fd5a781cd54da21d308f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Arduino Flash String transmit method.  <a href="class_c_c1101.html#ab139a34e03a6fd5a781cd54da21d308f">More...</a><br /></td></tr>
 <tr class="separator:ab139a34e03a6fd5a781cd54da21d308f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -302,6 +324,12 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memitem:a88a10657bd2215a11a2331f937414b55 inherit pub_methods_class_physical_layer"><td class="memItemLeft" align="right" valign="top">int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_physical_layer.html#a88a10657bd2215a11a2331f937414b55">startDirect</a> ()</td></tr>
 <tr class="memdesc:a88a10657bd2215a11a2331f937414b55 inherit pub_methods_class_physical_layer"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configure module parameters for direct modes. Must be called prior to "ham" modes like RTTY or AX.25. Only available in FSK mode.  <a href="class_physical_layer.html#a88a10657bd2215a11a2331f937414b55">More...</a><br /></td></tr>
 <tr class="separator:a88a10657bd2215a11a2331f937414b55 inherit pub_methods_class_physical_layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:a328cebbc16f347860698f06dc5f0966e"><td class="memItemLeft" align="right" valign="top"><a id="a328cebbc16f347860698f06dc5f0966e"></a>
+<a class="el" href="class_module.html">Module</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>_mod</b></td></tr>
+<tr class="separator:a328cebbc16f347860698f06dc5f0966e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Control class for CC1101 module. </p>

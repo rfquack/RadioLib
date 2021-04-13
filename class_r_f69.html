@@ -84,6 +84,7 @@ $(document).ready(function(){initNavTree('class_r_f69.html',''); initResizable()
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="class_r_f69-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">RF69 Class Reference</div>  </div>
@@ -255,6 +256,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memitem:a0c30202b2d52eb32f43066bc0f938638"><td class="memItemLeft" align="right" valign="top">int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_f69.html#a0c30202b2d52eb32f43066bc0f938638">getChipVersion</a> ()</td></tr>
 <tr class="memdesc:a0c30202b2d52eb32f43066bc0f938638"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read version SPI register. Should return RF69_CHIP_VERSION (0x24) if <a class="el" href="class_s_x127x.html" title="Base class for SX127x series. All derived classes for SX127x (e.g. SX1278 or SX1272) inherit from thi...">SX127x</a> is connected and working.  <a href="class_r_f69.html#a0c30202b2d52eb32f43066bc0f938638">More...</a><br /></td></tr>
 <tr class="separator:a0c30202b2d52eb32f43066bc0f938638"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab041b36989adc2a889317cb7773e8ca2"><td class="memItemLeft" align="right" valign="top">int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_f69.html#ab041b36989adc2a889317cb7773e8ca2">SPIsetRegValue</a> (uint8_t reg, uint8_t value, uint8_t msb=7, uint8_t lsb=0, uint8_t checkInterval=2)</td></tr>
+<tr class="memdesc:ab041b36989adc2a889317cb7773e8ca2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Proxy to _mod-&gt;SPIsetRegValue (to avoid exposing _mod)  <a href="class_r_f69.html#ab041b36989adc2a889317cb7773e8ca2">More...</a><br /></td></tr>
+<tr class="separator:ab041b36989adc2a889317cb7773e8ca2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab139a34e03a6fd5a781cd54da21d308f"><td class="memItemLeft" align="right" valign="top">int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_f69.html#ab139a34e03a6fd5a781cd54da21d308f">transmit</a> (__FlashStringHelper *fstr, uint8_t addr=0)</td></tr>
 <tr class="memdesc:ab139a34e03a6fd5a781cd54da21d308f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Arduino Flash String transmit method.  <a href="class_r_f69.html#ab139a34e03a6fd5a781cd54da21d308f">More...</a><br /></td></tr>
 <tr class="separator:ab139a34e03a6fd5a781cd54da21d308f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -325,6 +329,12 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memitem:a88a10657bd2215a11a2331f937414b55 inherit pub_methods_class_physical_layer"><td class="memItemLeft" align="right" valign="top">int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_physical_layer.html#a88a10657bd2215a11a2331f937414b55">startDirect</a> ()</td></tr>
 <tr class="memdesc:a88a10657bd2215a11a2331f937414b55 inherit pub_methods_class_physical_layer"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configure module parameters for direct modes. Must be called prior to "ham" modes like RTTY or AX.25. Only available in FSK mode.  <a href="class_physical_layer.html#a88a10657bd2215a11a2331f937414b55">More...</a><br /></td></tr>
 <tr class="separator:a88a10657bd2215a11a2331f937414b55 inherit pub_methods_class_physical_layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:a78c5f2dd6e74e3918b66b2d5442800d2"><td class="memItemLeft" align="right" valign="top"><a id="a78c5f2dd6e74e3918b66b2d5442800d2"></a>
+<a class="el" href="class_module.html">Module</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>_mod</b></td></tr>
+<tr class="separator:a78c5f2dd6e74e3918b66b2d5442800d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Control class for RF69 module. Also serves as base class for <a class="el" href="class_s_x1231.html" title="Control class for SX1231 module. Overrides some methods from RF69 due to different register values.">SX1231</a>. </p>
@@ -1553,6 +1563,55 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 
 <p>Sets the module to sleep mode. </p>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__status__codes.html">Status Codes</a> </dd></dl>
+
+</div>
+</div>
+<a id="ab041b36989adc2a889317cb7773e8ca2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab041b36989adc2a889317cb7773e8ca2">&#9670;&nbsp;</a></span>SPIsetRegValue()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int16_t RF69::SPIsetRegValue </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>reg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>msb</em> = <code>7</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>lsb</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>checkInterval</em> = <code>2</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Proxy to _mod-&gt;SPIsetRegValue (to avoid exposing _mod) </p>
+<dl class="section return"><dt>Returns</dt><dd>status code </dd></dl>
 
 </div>
 </div>

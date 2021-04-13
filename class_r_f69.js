@@ -46,6 +46,7 @@ var class_r_f69 =
     [ "setRxBandwidth", "class_r_f69.html#a735d8f22095a7e69471d73ca021b9d1a", null ],
     [ "setSyncWord", "class_r_f69.html#a26667d50ec845c28e17236c69c886561", null ],
     [ "sleep", "class_r_f69.html#a472a04041551cb38d2223fb34f71d8eb", null ],
+    [ "SPIsetRegValue", "class_r_f69.html#ab041b36989adc2a889317cb7773e8ca2", null ],
     [ "standby", "class_r_f69.html#a20242499eb926ff7b7da6e3f74a9ece1", null ],
     [ "startReceive", "class_r_f69.html#afae38fa64242043de34096bf497725f1", null ],
     [ "startTransmit", "class_r_f69.html#a923654706eff5118ef6e84214e837f27", null ],
@@ -58,5 +59,6 @@ var class_r_f69 =
     [ "transmit", "class_r_f69.html#a09ba80f60ee7974011a4b4f6c18c6847", null ],
     [ "transmit", "class_r_f69.html#af81565ee82ef9a7de9c5663c745f4ef7", null ],
     [ "transmitDirect", "class_r_f69.html#a222682569338abb49d6952430b6eebdd", null ],
-    [ "variablePacketLengthMode", "class_r_f69.html#af62ebde1ea34a394b9781a21ae348c39", null ]
+    [ "variablePacketLengthMode", "class_r_f69.html#af62ebde1ea34a394b9781a21ae348c39", null ],
+    [ "_mod", "class_r_f69.html#a78c5f2dd6e74e3918b66b2d5442800d2", null ]
 ];

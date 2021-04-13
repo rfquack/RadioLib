@@ -262,6 +262,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memitem:a0c30202b2d52eb32f43066bc0f938638 inherit pub_methods_class_r_f69"><td class="memItemLeft" align="right" valign="top">int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_f69.html#a0c30202b2d52eb32f43066bc0f938638">getChipVersion</a> ()</td></tr>
 <tr class="memdesc:a0c30202b2d52eb32f43066bc0f938638 inherit pub_methods_class_r_f69"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read version SPI register. Should return RF69_CHIP_VERSION (0x24) if <a class="el" href="class_s_x127x.html" title="Base class for SX127x series. All derived classes for SX127x (e.g. SX1278 or SX1272) inherit from thi...">SX127x</a> is connected and working.  <a href="class_r_f69.html#a0c30202b2d52eb32f43066bc0f938638">More...</a><br /></td></tr>
 <tr class="separator:a0c30202b2d52eb32f43066bc0f938638 inherit pub_methods_class_r_f69"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab041b36989adc2a889317cb7773e8ca2 inherit pub_methods_class_r_f69"><td class="memItemLeft" align="right" valign="top">int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_f69.html#ab041b36989adc2a889317cb7773e8ca2">SPIsetRegValue</a> (uint8_t reg, uint8_t value, uint8_t msb=7, uint8_t lsb=0, uint8_t checkInterval=2)</td></tr>
+<tr class="memdesc:ab041b36989adc2a889317cb7773e8ca2 inherit pub_methods_class_r_f69"><td class="mdescLeft">&#160;</td><td class="mdescRight">Proxy to _mod-&gt;SPIsetRegValue (to avoid exposing _mod)  <a href="class_r_f69.html#ab041b36989adc2a889317cb7773e8ca2">More...</a><br /></td></tr>
+<tr class="separator:ab041b36989adc2a889317cb7773e8ca2 inherit pub_methods_class_r_f69"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab139a34e03a6fd5a781cd54da21d308f inherit pub_methods_class_r_f69"><td class="memItemLeft" align="right" valign="top">int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_f69.html#ab139a34e03a6fd5a781cd54da21d308f">transmit</a> (__FlashStringHelper *fstr, uint8_t addr=0)</td></tr>
 <tr class="memdesc:ab139a34e03a6fd5a781cd54da21d308f inherit pub_methods_class_r_f69"><td class="mdescLeft">&#160;</td><td class="mdescRight">Arduino Flash String transmit method.  <a href="class_r_f69.html#ab139a34e03a6fd5a781cd54da21d308f">More...</a><br /></td></tr>
 <tr class="separator:ab139a34e03a6fd5a781cd54da21d308f inherit pub_methods_class_r_f69"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -332,6 +335,13 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memitem:a88a10657bd2215a11a2331f937414b55 inherit pub_methods_class_physical_layer"><td class="memItemLeft" align="right" valign="top">int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_physical_layer.html#a88a10657bd2215a11a2331f937414b55">startDirect</a> ()</td></tr>
 <tr class="memdesc:a88a10657bd2215a11a2331f937414b55 inherit pub_methods_class_physical_layer"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configure module parameters for direct modes. Must be called prior to "ham" modes like RTTY or AX.25. Only available in FSK mode.  <a href="class_physical_layer.html#a88a10657bd2215a11a2331f937414b55">More...</a><br /></td></tr>
 <tr class="separator:a88a10657bd2215a11a2331f937414b55 inherit pub_methods_class_physical_layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header pub_attribs_class_r_f69"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_class_r_f69')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="class_r_f69.html">RF69</a></td></tr>
+<tr class="memitem:a78c5f2dd6e74e3918b66b2d5442800d2 inherit pub_attribs_class_r_f69"><td class="memItemLeft" align="right" valign="top"><a id="a78c5f2dd6e74e3918b66b2d5442800d2"></a>
+<a class="el" href="class_module.html">Module</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>_mod</b></td></tr>
+<tr class="separator:a78c5f2dd6e74e3918b66b2d5442800d2 inherit pub_attribs_class_r_f69"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Control class for SX1231 module. Overrides some methods from <a class="el" href="class_r_f69.html" title="Control class for RF69 module. Also serves as base class for SX1231.">RF69</a> due to different register values. </p>
