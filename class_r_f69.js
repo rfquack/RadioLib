@@ -38,7 +38,6 @@ var class_r_f69 =
     [ "setLnaTestBoost", "class_r_f69.html#aa14dbfd82cd75b9759d4d78bdb05c194", null ],
     [ "setNodeAddress", "class_r_f69.html#ab9c217d5ece259950780a05c6e41f75c", null ],
     [ "setOOK", "class_r_f69.html#a9c2f94a1c3c8a4f3fd2c5785217bee0a", null ],
-    [ "setOOK", "class_r_f69.html#a9c2f94a1c3c8a4f3fd2c5785217bee0a", null ],
     [ "setOokThresholdType", "class_r_f69.html#a219a046c10ddcc0a787ad19346ecad6a", null ],
     [ "setOutputPower", "class_r_f69.html#a998ddd21fc152d835c6f1b8d31b02fcc", null ],
     [ "setPreambleLength", "class_r_f69.html#a7c84b3f881cad6e05b0f4f68c24496d9", null ],
