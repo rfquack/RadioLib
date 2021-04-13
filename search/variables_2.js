@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['lastpacketrssi',['lastPacketRSSI',['../class_r_f69.html#a7760fe8d62f33dd9d1f30acf648dc839',1,'RF69']]]
+  ['control_619',['control',['../class_a_x25_frame.html#a5b196079b539dc417ca65dd4ad622f8f',1,'AX25Frame']]]
 ];

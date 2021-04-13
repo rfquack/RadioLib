@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['hc05',['HC05',['../class_h_c05.html',1,'']]],
-  ['httpclient',['HTTPClient',['../class_h_t_t_p_client.html',1,'']]]
+  ['esp8266_355',['ESP8266',['../class_e_s_p8266.html',1,'']]]
 ];
