@@ -84,7 +84,6 @@ $(document).ready(function(){initNavTree('classn_r_f24.html',''); initResizable(
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="classn_r_f24-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">nRF24 Class Reference</div>  </div>
@@ -197,15 +196,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aeb98b92de42dec7c703888c62e061c3c"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classn_r_f24.html#aeb98b92de42dec7c703888c62e061c3c">random</a> ()</td></tr>
 <tr class="memdesc:aeb98b92de42dec7c703888c62e061c3c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dummy random method, to ensure <a class="el" href="class_physical_layer.html" title="Provides common interface for protocols that run on LoRa/FSK modules, such as RTTY or LoRaWAN....">PhysicalLayer</a> compatibility.  <a href="classn_r_f24.html#aeb98b92de42dec7c703888c62e061c3c">More...</a><br /></td></tr>
 <tr class="separator:aeb98b92de42dec7c703888c62e061c3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7086eb5ae1224c8bba738560bfd6ebf2"><td class="memItemLeft" align="right" valign="top"><a id="a7086eb5ae1224c8bba738560bfd6ebf2"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>SPIreadRxPayload</b> (uint8_t *data, uint8_t numBytes)</td></tr>
-<tr class="separator:a7086eb5ae1224c8bba738560bfd6ebf2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a73a3665faf1c93096dd8d9f6b45a7b52"><td class="memItemLeft" align="right" valign="top"><a id="a73a3665faf1c93096dd8d9f6b45a7b52"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>SPIwriteTxPayload</b> (uint8_t *data, uint8_t numBytes)</td></tr>
-<tr class="separator:a73a3665faf1c93096dd8d9f6b45a7b52"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5551941efe79142c2b6d30906980024e"><td class="memItemLeft" align="right" valign="top"><a id="a5551941efe79142c2b6d30906980024e"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>SPItransfer</b> (uint8_t cmd, bool write=false, uint8_t *dataOut=NULL, uint8_t *dataIn=NULL, uint8_t numBytes=0)</td></tr>
-<tr class="separator:a5551941efe79142c2b6d30906980024e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab139a34e03a6fd5a781cd54da21d308f"><td class="memItemLeft" align="right" valign="top">int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classn_r_f24.html#ab139a34e03a6fd5a781cd54da21d308f">transmit</a> (__FlashStringHelper *fstr, uint8_t addr=0)</td></tr>
 <tr class="memdesc:ab139a34e03a6fd5a781cd54da21d308f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Arduino Flash String transmit method.  <a href="classn_r_f24.html#ab139a34e03a6fd5a781cd54da21d308f">More...</a><br /></td></tr>
 <tr class="separator:ab139a34e03a6fd5a781cd54da21d308f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -276,12 +266,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>SPItransfer</b> (uint
 <tr class="memitem:a88a10657bd2215a11a2331f937414b55 inherit pub_methods_class_physical_layer"><td class="memItemLeft" align="right" valign="top">int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_physical_layer.html#a88a10657bd2215a11a2331f937414b55">startDirect</a> ()</td></tr>
 <tr class="memdesc:a88a10657bd2215a11a2331f937414b55 inherit pub_methods_class_physical_layer"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configure module parameters for direct modes. Must be called prior to "ham" modes like RTTY or AX.25. Only available in FSK mode.  <a href="class_physical_layer.html#a88a10657bd2215a11a2331f937414b55">More...</a><br /></td></tr>
 <tr class="separator:a88a10657bd2215a11a2331f937414b55 inherit pub_methods_class_physical_layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
-Public Attributes</h2></td></tr>
-<tr class="memitem:a276100580f8b3b0de4d9126c6a0de830"><td class="memItemLeft" align="right" valign="top"><a id="a276100580f8b3b0de4d9126c6a0de830"></a>
-<a class="el" href="class_module.html">Module</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>_mod</b></td></tr>
-<tr class="separator:a276100580f8b3b0de4d9126c6a0de830"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Control class for nRF24 module. </p>

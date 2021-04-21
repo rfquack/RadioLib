@@ -36,6 +36,5 @@ var class_si443x =
     [ "transmit", "class_si443x.html#aeb62c5a521aafc1e0525c58e9364482b", null ],
     [ "transmit", "class_si443x.html#a782748025e19ec6e597293afb6570bff", null ],
     [ "transmit", "class_si443x.html#af81565ee82ef9a7de9c5663c745f4ef7", null ],
-    [ "transmitDirect", "class_si443x.html#a5a86a2032c4b876c1c8e4a7cf4730c99", null ],
-    [ "_mod", "class_si443x.html#a60990eb8883028ac6b3619ae734fab20", null ]
+    [ "transmitDirect", "class_si443x.html#a5a86a2032c4b876c1c8e4a7cf4730c99", null ]
 ];

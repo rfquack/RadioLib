@@ -69,7 +69,7 @@ var searchData=
   ['spireadcommand_295',['SPIreadCommand',['../class_module.html#a849ad85fc1bc3a7130e660c13973ab26',1,'Module']]],
   ['spireadregister_296',['SPIreadRegister',['../class_module.html#a1d1a279cc7e1ab92e30c29c4dcca26a3',1,'Module']]],
   ['spireadregisterburst_297',['SPIreadRegisterBurst',['../class_module.html#a6fa5239d73379e4140f5c4f513b1b8d2',1,'Module']]],
-  ['spisetregvalue_298',['SPIsetRegValue',['../class_module.html#a87ca265fa2d1fe7c251b4230ef6bd6ca',1,'Module::SPIsetRegValue()'],['../class_r_f69.html#ab041b36989adc2a889317cb7773e8ca2',1,'RF69::SPIsetRegValue()']]],
+  ['spisetregvalue_298',['SPIsetRegValue',['../class_module.html#a87ca265fa2d1fe7c251b4230ef6bd6ca',1,'Module']]],
   ['spitransfer_299',['SPItransfer',['../class_module.html#aefd955f1cd6d588b2cc229db87cb2121',1,'Module']]],
   ['spiwritecommand_300',['SPIwriteCommand',['../class_module.html#ae89764d15e8df5694a6aec0e18f72d3f',1,'Module']]],
   ['spiwriteregister_301',['SPIwriteRegister',['../class_module.html#ab814614ddd34b57f5a612a20f5fe4c57',1,'Module']]],

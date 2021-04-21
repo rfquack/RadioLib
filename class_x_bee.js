@@ -8,6 +8,5 @@ var class_x_bee =
     [ "reset", "class_x_bee.html#a10a4b3df9d5980e89a126848ec31613c", null ],
     [ "setPanId", "class_x_bee.html#a88745c61a1dc2d1139c34d6cc385d35b", null ],
     [ "transmit", "class_x_bee.html#ac1573e0aa0421cbcc767a968dda65819", null ],
-    [ "transmit", "class_x_bee.html#a697bfb6969560ef25bfb6c7bc64c3f09", null ],
-    [ "_mod", "class_x_bee.html#a5aa4721476086ae7899a7a12aa73b03c", null ]
+    [ "transmit", "class_x_bee.html#a697bfb6969560ef25bfb6c7bc64c3f09", null ]
 ];

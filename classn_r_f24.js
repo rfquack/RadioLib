@@ -29,9 +29,6 @@ var classn_r_f24 =
     [ "setReceivePipe", "classn_r_f24.html#ab5bc08aef88d8cf41c38369044005da8", null ],
     [ "setTransmitPipe", "classn_r_f24.html#aa0e1f2dddf810213410a420205bbd8af", null ],
     [ "sleep", "classn_r_f24.html#a033287e33c532638c11e2775a073f297", null ],
-    [ "SPIreadRxPayload", "classn_r_f24.html#a7086eb5ae1224c8bba738560bfd6ebf2", null ],
-    [ "SPItransfer", "classn_r_f24.html#a5551941efe79142c2b6d30906980024e", null ],
-    [ "SPIwriteTxPayload", "classn_r_f24.html#a73a3665faf1c93096dd8d9f6b45a7b52", null ],
     [ "standby", "classn_r_f24.html#a5957f06a891d3d9c07e87b59c239ce56", null ],
     [ "startReceive", "classn_r_f24.html#af4f443da5d90e032e5f2f65420515f9c", null ],
     [ "startTransmit", "classn_r_f24.html#a923654706eff5118ef6e84214e837f27", null ],
@@ -43,6 +40,5 @@ var classn_r_f24 =
     [ "transmit", "classn_r_f24.html#aeb62c5a521aafc1e0525c58e9364482b", null ],
     [ "transmit", "classn_r_f24.html#a583d505bd3a638ecc5576dd2dd95f044", null ],
     [ "transmit", "classn_r_f24.html#af81565ee82ef9a7de9c5663c745f4ef7", null ],
-    [ "transmitDirect", "classn_r_f24.html#a090bb64f65309efabfa1ffd86daa2303", null ],
-    [ "_mod", "classn_r_f24.html#a276100580f8b3b0de4d9126c6a0de830", null ]
+    [ "transmitDirect", "classn_r_f24.html#a090bb64f65309efabfa1ffd86daa2303", null ]
 ];

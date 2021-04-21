@@ -9,6 +9,5 @@ var class_e_s_p8266 =
     [ "receive", "class_e_s_p8266.html#aa79f841de9ae9c5d6057e89a9f1721ea", null ],
     [ "reset", "class_e_s_p8266.html#aee0279b476a83a55f54ab22e6d8f3904", null ],
     [ "send", "class_e_s_p8266.html#a1caaa537edd52d1c2b7a0a25ef69c1c9", null ],
-    [ "send", "class_e_s_p8266.html#a2f34474953b7dbe4d057c8e3f65e0dc4", null ],
-    [ "_mod", "class_e_s_p8266.html#a2b822ee090bfc8e93f25105cbc9274c5", null ]
+    [ "send", "class_e_s_p8266.html#a2f34474953b7dbe4d057c8e3f65e0dc4", null ]
 ];

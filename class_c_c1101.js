@@ -39,13 +39,6 @@ var class_c_c1101 =
     [ "setRxBandwidth", "class_c_c1101.html#a381d0059d7a0ccd8a2f54d7d3376f9b6", null ],
     [ "setSyncWord", "class_c_c1101.html#ab89b0932dbacadc34d049a2bd2292001", null ],
     [ "setSyncWord", "class_c_c1101.html#a433f1a40b33be6c84d3665a1b4cd57d6", null ],
-    [ "SPIgetRegValue", "class_c_c1101.html#aa66daaa7c12dbab27c4d785e1ab27123", null ],
-    [ "SPIreadRegister", "class_c_c1101.html#a7f730b7a6577444f10c4cfae091b02e4", null ],
-    [ "SPIreadRegisterBurst", "class_c_c1101.html#a6bc3a77e51f9e56753beb73e2225697b", null ],
-    [ "SPIsendCommand", "class_c_c1101.html#ac0879265115c40a170f89fdd74e8eb12", null ],
-    [ "SPIsetRegValue", "class_c_c1101.html#ab802393d2b32249caf2752ad768ab7a0", null ],
-    [ "SPIwriteRegister", "class_c_c1101.html#a8c5da023ff87697627cadc970240a4ec", null ],
-    [ "SPIwriteRegisterBurst", "class_c_c1101.html#a394b2bca8f4bdd37b38bc069016ed7d5", null ],
     [ "standby", "class_c_c1101.html#a7612bf81e48086004c62548de2682266", null ],
     [ "startReceive", "class_c_c1101.html#af727750d05be0bcef4bb8ac260d110e3", null ],
     [ "startTransmit", "class_c_c1101.html#a923654706eff5118ef6e84214e837f27", null ],
@@ -58,6 +51,5 @@ var class_c_c1101 =
     [ "transmit", "class_c_c1101.html#a7cb99a9200b21829b50e3fc3878573f4", null ],
     [ "transmit", "class_c_c1101.html#af81565ee82ef9a7de9c5663c745f4ef7", null ],
     [ "transmitDirect", "class_c_c1101.html#a240eef8fa7d838d76f3c11086dc50e46", null ],
-    [ "variablePacketLengthMode", "class_c_c1101.html#a881122ec3457c5f95760859f8e0297c7", null ],
-    [ "_mod", "class_c_c1101.html#a328cebbc16f347860698f06dc5f0966e", null ]
+    [ "variablePacketLengthMode", "class_c_c1101.html#a881122ec3457c5f95760859f8e0297c7", null ]
 ];
