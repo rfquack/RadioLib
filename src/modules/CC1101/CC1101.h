@@ -506,7 +506,7 @@
 #define CC1101_DEFAULT_POWER                          10
 #define CC1101_DEFAULT_PREAMBLELEN                    16
 #define CC1101_DEFAULT_SW                             {0x12, 0xAD}
-#define CC1101_DEFAULT_LEN                            2
+#define CC1101_DEFAULT_SW_LEN                         2
 
 /*!
   \class CC1101
