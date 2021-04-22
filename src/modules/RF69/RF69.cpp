@@ -55,7 +55,7 @@ int16_t RF69::begin(float freq, float br, float freqDev, float rxBw, int8_t powe
   RADIOLIB_ASSERT(state);
 
   // configure bitrate
-  _rxBw = 125.0;
+  _rxBw = rxBw;
   state = setBitRate(br);
   RADIOLIB_ASSERT(state);
 
@@ -80,7 +80,7 @@ int16_t RF69::begin(float freq, float br, float freqDev, float rxBw, int8_t powe
   RADIOLIB_ASSERT(state);
 
   // set default sync word
-  uint8_t syncWord[] = {0x12, 0xAD};
+  uint8_t syncWord[] = RF69_DEFAULT_SW;
   state = setSyncWord(syncWord, sizeof(syncWord));
   RADIOLIB_ASSERT(state);
 
@@ -377,6 +377,7 @@ int16_t RF69::setOOK(bool enableOOK) {
   } else {
     state = _mod->SPIsetRegValue(RF69_REG_DATA_MODUL, RF69_FSK, 4, 3, 5);
   }
+
   if(state == ERR_NONE) {
     _ook = enableOOK;
   }
@@ -404,11 +405,13 @@ int16_t RF69::setFrequency(float freq) {
 
   //set carrier frequency
   uint32_t FRF = (freq * (uint32_t(1) << RF69_DIV_EXPONENT)) / RF69_CRYSTAL_FREQ;
-  _mod->SPIwriteRegister(RF69_REG_FRF_MSB, (FRF & 0xFF0000) >> 16);
-  _mod->SPIwriteRegister(RF69_REG_FRF_MID, (FRF & 0x00FF00) >> 8);
-  _mod->SPIwriteRegister(RF69_REG_FRF_LSB, FRF & 0x0000FF);
+  uint16_t state = _mod->SPIwriteRegister(RF69_REG_FRF_MSB, (FRF & 0xFF0000) >> 16);
+  state |= _mod->SPIwriteRegister(RF69_REG_FRF_MID, (FRF & 0x00FF00) >> 8);
+  state |= _mod->SPIwriteRegister(RF69_REG_FRF_LSB, FRF & 0x0000FF);
 
-  _freq = freq;
+  if(state == ERR_NONE) {
+    _freq = freq;
+  }
 
   return(ERR_NONE);
 }
@@ -428,9 +431,11 @@ int16_t RF69::setBitRate(float br) {
   uint16_t bitRate = 32000 / br;
   int16_t state = _mod->SPIsetRegValue(RF69_REG_BITRATE_MSB, (bitRate & 0xFF00) >> 8, 7, 0);
   state |= _mod->SPIsetRegValue(RF69_REG_BITRATE_LSB, bitRate & 0x00FF, 7, 0);
+
   if(state == ERR_NONE) {
-    RF69::_br = br;
+    _br = br;
   }
+
   return(state);
 }
 
@@ -524,7 +529,7 @@ int16_t RF69::setRxBandwidth(float rxBw) {
   // set Rx bandwidth
   int16_t state = _mod->SPIsetRegValue(RF69_REG_RX_BW, RF69_DCC_FREQ | bwMant | bwExp, 7, 0);
   if(state == ERR_NONE) {
-    RF69::_rxBw = rxBw;
+    _rxBw = rxBw;
   }
   return(state);
 }
@@ -549,6 +554,10 @@ int16_t RF69::setFrequencyDeviation(float freqDev) {
   uint32_t fdev = (newFreqDev * (base << 19)) / 32000;
   int16_t state = _mod->SPIsetRegValue(RF69_REG_FDEV_MSB, (fdev & 0xFF00) >> 8, 5, 0);
   state |= _mod->SPIsetRegValue(RF69_REG_FDEV_LSB, fdev & 0x00FF, 7, 0);
+
+  if (state == ERR_NONE) {
+    _freqDev = freqDev;
+  }
 
   return(state);
 }
@@ -604,14 +613,17 @@ int16_t RF69::setSyncWord(uint8_t* syncWord, size_t len, uint8_t maxErrBits) {
     }
   }
 
-  _syncWordLength = len;
-
   int16_t state = enableSyncWordFiltering(maxErrBits);
   RADIOLIB_ASSERT(state);
 
   // set sync word register
-  _mod->SPIwriteRegisterBurst(RF69_REG_SYNC_VALUE_1, syncWord, len);
-  return(ERR_NONE);
+  state |= _mod->SPIwriteRegisterBurst(RF69_REG_SYNC_VALUE_1, syncWord, len);
+
+  if(state == ERR_NONE) {
+    _syncWordLength = len;
+  }
+
+  return(state);
 }
 
 int16_t RF69::setPreambleLength(uint8_t preambleLen) {
@@ -622,7 +634,14 @@ int16_t RF69::setPreambleLength(uint8_t preambleLen) {
 
   uint8_t preLenBytes = preambleLen / 8;
   _mod->SPIwriteRegister(RF69_REG_PREAMBLE_MSB, 0x00);
-  return(_mod->SPIsetRegValue(RF69_REG_PREAMBLE_LSB, preLenBytes));
+
+  uint16_t state = _mod->SPIsetRegValue(RF69_REG_PREAMBLE_LSB, preLenBytes);
+
+  if (state == ERR_NONE) {
+    _preambleLen = preambleLen;
+  }
+
+  return (state);
 }
 
 int16_t RF69::setNodeAddress(uint8_t nodeAddr) {
@@ -744,6 +763,10 @@ int16_t RF69::setPromiscuousMode(bool promiscuous) {
 
     // enable CRC filtering
     state = setCrcFiltering(true);
+  }
+
+  if(state == ERR_NONE) {
+    _promiscuous = promiscuous;
   }
 
   return(state);
