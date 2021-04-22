@@ -440,6 +440,7 @@
 #define RF69_DEFAULT_POWER                            10
 #define RF69_DEFAULT_PREAMBLELEN                      16
 #define RF69_DEFAULT_SW                               {0x12, 0xAD}
+#define RF69_DEFAULT_SW_LEN                           2
 
 /*!
   \class RF69
@@ -908,7 +909,7 @@ class RF69: public PhysicalLayer {
     bool _ook = false;
     int16_t _tempOffset = 0;
 
-    uint8_t _syncWordLength = sizeof(RF69_DEFAULT_SW);
+    uint8_t _syncWordLength = RF69_DEFAULT_SW_LEN;
 
     int16_t config();
     int16_t directMode();

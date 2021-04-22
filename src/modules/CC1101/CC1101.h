@@ -506,6 +506,7 @@
 #define CC1101_DEFAULT_POWER                          10
 #define CC1101_DEFAULT_PREAMBLELEN                    16
 #define CC1101_DEFAULT_SW                             {0x12, 0xAD}
+#define CC1101_DEFAULT_LEN                            2
 
 /*!
   \class CC1101
@@ -942,7 +943,7 @@ class CC1101: public PhysicalLayer {
     bool _promiscuous = false;
     bool _crcOn = true;
 
-    uint8_t _syncWordLength = sizeof(CC1101_DEFAULT_SW);
+    uint8_t _syncWordLength = CC1101_DEFAULT_SW_LEN;
 
     int16_t config();
     int16_t directMode();
