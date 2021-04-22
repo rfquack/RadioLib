@@ -405,13 +405,11 @@ int16_t RF69::setFrequency(float freq) {
 
   //set carrier frequency
   uint32_t FRF = (freq * (uint32_t(1) << RF69_DIV_EXPONENT)) / RF69_CRYSTAL_FREQ;
-  uint16_t state = _mod->SPIwriteRegister(RF69_REG_FRF_MSB, (FRF & 0xFF0000) >> 16);
-  state |= _mod->SPIwriteRegister(RF69_REG_FRF_MID, (FRF & 0x00FF00) >> 8);
-  state |= _mod->SPIwriteRegister(RF69_REG_FRF_LSB, FRF & 0x0000FF);
+  _mod->SPIwriteRegister(RF69_REG_FRF_MSB, (FRF & 0xFF0000) >> 16);
+  _mod->SPIwriteRegister(RF69_REG_FRF_MID, (FRF & 0x00FF00) >> 8);
+  _mod->SPIwriteRegister(RF69_REG_FRF_LSB, FRF & 0x0000FF);
 
-  if(state == ERR_NONE) {
-    _freq = freq;
-  }
+  _freq = freq;
 
   return(ERR_NONE);
 }
@@ -617,7 +615,7 @@ int16_t RF69::setSyncWord(uint8_t* syncWord, size_t len, uint8_t maxErrBits) {
   RADIOLIB_ASSERT(state);
 
   // set sync word register
-  state |= _mod->SPIwriteRegisterBurst(RF69_REG_SYNC_VALUE_1, syncWord, len);
+  _mod->SPIwriteRegisterBurst(RF69_REG_SYNC_VALUE_1, syncWord, len);
 
   if(state == ERR_NONE) {
     _syncWordLength = len;
