@@ -109,9 +109,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ab12de8d953c2384c5fff09b4abf65d1e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classn_r_f24.html#ab12de8d953c2384c5fff09b4abf65d1e">nRF24</a> (<a class="el" href="class_module.html">Module</a> *mod)</td></tr>
 <tr class="memdesc:ab12de8d953c2384c5fff09b4abf65d1e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor.  <a href="classn_r_f24.html#ab12de8d953c2384c5fff09b4abf65d1e">More...</a><br /></td></tr>
 <tr class="separator:ab12de8d953c2384c5fff09b4abf65d1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a60eb59262c5004b587b1d8177706ff28"><td class="memItemLeft" align="right" valign="top">int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classn_r_f24.html#a60eb59262c5004b587b1d8177706ff28">begin</a> (int16_t freq=2400, int16_t dataRate=1000, int8_t power=-12, uint8_t addrWidth=5)</td></tr>
-<tr class="memdesc:a60eb59262c5004b587b1d8177706ff28"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialization method.  <a href="classn_r_f24.html#a60eb59262c5004b587b1d8177706ff28">More...</a><br /></td></tr>
-<tr class="separator:a60eb59262c5004b587b1d8177706ff28"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6373e84610e016978963ecd56b4b85e1"><td class="memItemLeft" align="right" valign="top">int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classn_r_f24.html#a6373e84610e016978963ecd56b4b85e1">begin</a> (int16_t freq=NRF24_DEFAULT_FREQ, int16_t dataRate=NRF24_DEFAULT_DR, int8_t power=NRF24_DEFAULT_POWER, uint8_t addrWidth=NRF24_DEFAULT_ADDRWIDTH)</td></tr>
+<tr class="memdesc:a6373e84610e016978963ecd56b4b85e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialization method.  <a href="classn_r_f24.html#a6373e84610e016978963ecd56b4b85e1">More...</a><br /></td></tr>
+<tr class="separator:a6373e84610e016978963ecd56b4b85e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a033287e33c532638c11e2775a073f297"><td class="memItemLeft" align="right" valign="top">int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classn_r_f24.html#a033287e33c532638c11e2775a073f297">sleep</a> ()</td></tr>
 <tr class="memdesc:a033287e33c532638c11e2775a073f297"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the module to sleep mode.  <a href="classn_r_f24.html#a033287e33c532638c11e2775a073f297">More...</a><br /></td></tr>
 <tr class="separator:a033287e33c532638c11e2775a073f297"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -297,8 +297,8 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a60eb59262c5004b587b1d8177706ff28"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a60eb59262c5004b587b1d8177706ff28">&#9670;&nbsp;</a></span>begin()</h2>
+<a id="a6373e84610e016978963ecd56b4b85e1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6373e84610e016978963ecd56b4b85e1">&#9670;&nbsp;</a></span>begin()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -307,25 +307,25 @@ Public Member Functions</h2></td></tr>
           <td class="memname">int16_t nRF24::begin </td>
           <td>(</td>
           <td class="paramtype">int16_t&#160;</td>
-          <td class="paramname"><em>freq</em> = <code>2400</code>, </td>
+          <td class="paramname"><em>freq</em> = <code>NRF24_DEFAULT_FREQ</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int16_t&#160;</td>
-          <td class="paramname"><em>dataRate</em> = <code>1000</code>, </td>
+          <td class="paramname"><em>dataRate</em> = <code>NRF24_DEFAULT_DR</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int8_t&#160;</td>
-          <td class="paramname"><em>power</em> = <code>-12</code>, </td>
+          <td class="paramname"><em>power</em> = <code>NRF24_DEFAULT_POWER</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>addrWidth</em> = <code>5</code>&#160;</td>
+          <td class="paramname"><em>addrWidth</em> = <code>NRF24_DEFAULT_ADDRWIDTH</code>&#160;</td>
         </tr>
         <tr>
           <td></td>

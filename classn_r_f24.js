@@ -1,7 +1,7 @@
 var classn_r_f24 =
 [
     [ "nRF24", "classn_r_f24.html#ab12de8d953c2384c5fff09b4abf65d1e", null ],
-    [ "begin", "classn_r_f24.html#a60eb59262c5004b587b1d8177706ff28", null ],
+    [ "begin", "classn_r_f24.html#a6373e84610e016978963ecd56b4b85e1", null ],
     [ "disablePipe", "classn_r_f24.html#a4dd39e5c0efee1f0c2a14f729eb4426a", null ],
     [ "getPacketLength", "classn_r_f24.html#a23ea1749c21863ebc5bd3a2b08d64f3b", null ],
     [ "getStatus", "classn_r_f24.html#a3f0b08fd8e58db36f6c1926cc3eac6a9", null ],
